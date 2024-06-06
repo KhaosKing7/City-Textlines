@@ -14,8 +14,8 @@ public class Main {
     static gameInstance game;
 
     public static void main(String[] args) {
-        Main Game = new Main();
-        Game.mainMenu();
+        Main main = new Main();
+        main.mainMenu();
     }
 
     public void mainMenu() {
@@ -29,6 +29,7 @@ public class Main {
         System.out.println("3: Options");
         System.out.println("4: Credits");
         System.out.println("q: Exit Game");
+
         String menuChoice = sc.next();
         switch (menuChoice) {
             case "1":
@@ -124,6 +125,7 @@ public class Main {
             //basically you cant do 2 things (important things) like building stuff
             // however things like making a decision on an event doesn't count towards the action count
             int actions = 0;
+
             gameMainMenu();
         }
     }
