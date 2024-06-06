@@ -6,19 +6,22 @@ public class gameInstance {
     public int month = 1;
     public int day = 1;
     public int population;
+    public int money = 10000;
+    public int income;
     public int waterNeeded;
     public int waterProvided;
     public int electricityNeeded;
     public int electricityProvided;
     public String monthString;
 public String cityName;
-    public gameInstance(int yearInput, String cityNameInput) {
-year = yearInput;
-cityName = cityNameInput;
+    public gameInstance(int year, String city) {
+        this.year = year;
+        this.cityName = city;
     }
 
-    public void nextStep() {
-
+    public void nextStep(String actionID, String actionID2) {
+//changes date to the next possible date
+        //usually at the middle or beginning of a month
         switch (month) {
             case 1:
                 if (day < 15) {
@@ -122,6 +125,15 @@ cityName = cityNameInput;
 
 
         }
+//deals with income, actions, building
+
+
+
+
+
+
+
+
 
 
     }
