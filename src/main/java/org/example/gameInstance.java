@@ -19,25 +19,19 @@ public class gameInstance {
         this.cityName = city;
     }
 
-
     public void nextStep(String actionID, String actionID2) {
-//changes date to the next possible date
+        //changes date to the next possible date
         //usually at the middle or beginning of a month
-        if (month < 12 && day < 15) {
-            day = 15;
-        } else if (month < 12 && day == 15) {
+        int halfWayPoint = month == 2 ? 14 : 15;
+        if(day >= halfWayPoint){
+            month = (month % 12) + 1;
             day = 1;
-            month++;
-        } else if (month == 12 && day == 1) {
-
-            day = 15;
-        } else {
-            day = 1;
-            month = 1;
+        }else{
+            day = halfWayPoint;
         }
 
-//deals with income, actions, building
 
+//deals with income, actions, building
 
     }
 
@@ -62,6 +56,12 @@ public class gameInstance {
 
     }
 }
+
+
+
+
+
+
 
 
 

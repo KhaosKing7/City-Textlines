@@ -124,6 +124,7 @@ public class Main {
             //if actions = 2 it won't let you do anything else
             //basically you cant do 2 things (important things) like building stuff
             // however things like making a decision on an event doesn't count towards the action count
+            //not implemented im just yapping
             int actions = 0;
 
             gameMainMenu();
