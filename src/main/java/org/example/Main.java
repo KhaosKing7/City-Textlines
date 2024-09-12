@@ -264,6 +264,7 @@ public class Main {
                         if(game.buildings.get(i)=="resArea"){
                             game.buildings.remove(i);
                             System.out.println("You have demolished a Residential area");
+                            sc.nextLine();
                             break;
                         }
                     }
@@ -281,6 +282,7 @@ public class Main {
                         if(game.buildings.get(i)=="comArea"){
                             game.buildings.remove(i);
                             System.out.println("You have demolished a Commercial area");
+                            sc.nextLine();
                             break;
                         }
                     }
@@ -295,6 +297,7 @@ public class Main {
                         if(game.buildings.get(i)=="indArea"){
                             game.buildings.remove(i);
                             System.out.println("You have demolished a Industrial area");
+                            sc.nextLine();
                             break;
                         }
                     }

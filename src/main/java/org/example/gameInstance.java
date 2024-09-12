@@ -77,7 +77,7 @@ maxResArea = indArea*5;
         }else {
           populationCapacity = maxResArea*1000;
       }
-income = population*comArea/2;
+income = (population/10)*comArea;
 electricityNeeded = resArea;
 waterNeeded = resArea*2;
 expenses = resArea*50+indArea*100;
